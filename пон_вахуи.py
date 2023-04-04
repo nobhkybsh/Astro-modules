@@ -67,7 +67,7 @@ class ПонВахуиMod(loader.Module):
         )
 
     async def send_sticker_pon(self, chat_id, reply_to: typing.Optional[int] = None):
-        m = await self.client.get_messages("@PON_STICKS", ids=random.randint(1, 100))
+        m = await self.client.get_messages("@newpcfreesimulator", ids=random.randint(1, 500))
         await self.client.send_message(chat_id, file=m, reply_to=reply_to)
 
     async def send_sticker_vahui(self, chat_id, reply_to: typing.Optional[int] = None):
